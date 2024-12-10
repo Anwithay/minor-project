@@ -55,10 +55,8 @@ function Register({ history }) {
                     <Form.Row>
                         <Form.Group controlId="forName" className="col-lg-8">
                             <Form.Label>Name *</Form.Label>
-                            <Form.Control type="text" name="name" placeholder="Ivan Ivanov" onChange={handleChanges} required />
-                            <Form.Text muted>
-                                The name can be your real one or a username.
-                            </Form.Text>
+                            <Form.Control type="text" name="name"  onChange={handleChanges} required />
+                            
                         </Form.Group>
                         {/* <Form.Group controlId="forLastName" className="col-lg-4">
                             <Form.Label>Last Name</Form.Label>
@@ -76,29 +74,27 @@ function Register({ history }) {
                     <Form.Row>
                         <Form.Group className="col-lg-12">
                             <Form.Label>Phone Number *</Form.Label>
-                            <Form.Control type="text" name="phoneNumber" placeholder="+359888888888" onChange={handleChanges} required />
-                            <Form.Text muted>
-                                Phone Number should be a valid BG number.
-                            </Form.Text>
+                            <Form.Control type="text" name="phoneNumber" onChange={handleChanges} required />
+                            
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
                         <Form.Group controlId="formBasicEmail" className="col-lg-12">
                             <Form.Label>Email address *</Form.Label>
-                            <Form.Control type="email" name="email" placeholder="ivan@abv.bg" onChange={handleChanges} required />
+                            <Form.Control type="email" name="email"  onChange={handleChanges} required />
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
                         <Form.Group controlId="formBasicPassword" className="col-lg-6">
                             <Form.Label>Password *</Form.Label>
-                            <Form.Control type="password" name="password" placeholder="Password" onChange={handleChanges} required />
+                            <Form.Control type="password" name="password"  onChange={handleChanges} required />
                             <Form.Text muted>
                                 Your password must be 8-20 characters long
                             </Form.Text>
                         </Form.Group>
                         <Form.Group className="col-lg-6">
                             <Form.Label>Reepeat Password *</Form.Label>
-                            <Form.Control type="password" name="repeatPassword" placeholder="Repeat password" onChange={handleChanges} required />
+                            <Form.Control type="password" name="repeatPassword"  onChange={handleChanges} required />
                         </Form.Group>
                     </Form.Row>
                     {loading ?
